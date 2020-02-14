@@ -1,0 +1,227 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  margin-top: 0;
+  padding-top: 0;
+  font-family: "times new roman", Helvetica, sans-serif;
+  background: #333;
+}
+
+.topnav {
+  height: 2vw;
+  background: #333;	
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 50px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a#link5 {
+  float: right;
+}
+
+.topnav a:hover {
+  background-color: #f2f2f2;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.topnav a.active {
+  background-color: #1e99ff;
+  color: white;
+}
+
+.header {
+  overflow: hidden;
+  width: 100%;
+  background: #333;
+  margin-top: 0;
+  height: -3vw;
+}
+
+.myBtn {
+  display: flex;
+  justify-content: center;
+}
+
+#demo {
+  opacity:0;
+  transition: opacity 1s; 
+  transition: .5s ease;
+  padding: 10px;
+}
+
+#slideSource {
+  opacity: 0;
+  transition: opacity 1s; 
+  transition: .5s ease;
+}
+
+#link {
+  padding: 10px;
+  background: dodgerblue;
+  width: 7.5vw;
+}
+
+#link:hover {
+  cursor: pointer;
+  opacity: 0.3
+}
+
+#link a {
+  display: flex;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+
+}
+
+#top {
+  padding: .1vw;
+  margin-left: 13vw;
+  margin-bottom: 1vw;
+}
+
+#top h1 {
+  font-family: helvetica;
+}
+
+svg {
+  display: flex;
+  justify-contents: center;
+  align-items: center;
+  width: 24vw;
+  height: 14vw;
+  transition:2s ease;
+  -webkit-transition:2s;
+  -moz-transition:2s;
+  position:absolute;
+}
+
+svg:hover {
+  cursor: pointer;
+  opacity: 0.3;
+  width: 30vw;
+  height: 20vw;
+  transition: .5s ease;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+#border {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 50%;
+  background: dodgerblue;
+  border-radius: 2px;
+}
+
+/* The Close Button */
+.close {
+  display: flex;
+  height: 1.6vw;
+  width: 1.2vw;
+  z-index: 1;
+  color: black;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: gainsboro;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+img {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+# {
+  padding: 1vw;
+  background: #333;
+  border-radius: 30px;
+}
+@media only screen and (min-width: 800px) {
+  /*svg {
+    left: 600;
+	
+  }*/
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  width: 100%;
+  height: 25%;
+  float: left;
+  padding: 10px;
+  height: 45vw; /* Should be removed. Only for demonstration */
+}
+
+@media only screen and (min-width: 1100px) {
+  .column {
+  	height: 40vw;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+	.column {
+  	height: 45vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .topnav a {
+    width: 100%;
+  }
+  
+  #top {
+    margin: 0;
+  }
+  
+  .column {
+    height: 50vw; 
+  }
+}
+
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column, h1, .totalField {
+    width: 100%;
+  }
+  /*svg {
+  	left: 250;
+  }*/
+}
+
+#validate:hover, #reset:hover {
+  background-color: #FFFFD0;
+  cursor: pointer;
+}
+
+#item_01, #item_02, #item_03, #item_04, #card_0, #card_1, #card_2 {
+  cursor: pointer;
+}

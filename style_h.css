@@ -1,0 +1,92 @@
+.page {
+  border: 1px solid gainsboro;
+  padding: .5vw;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  height: 100%;
+  margin-left: 12.4vw;
+  margin-right: 12.4vw;
+}
+
+.main {
+  height: 100%;
+}
+
+#contact a:link {
+  /* unvisited link */
+  color: green;
+  text-decoration: none;
+}
+
+/* visited link */
+#contact a:visited {
+  color: green;
+  text-decortation: none;
+}
+
+/* mouse over link */
+#contact a:hover {
+  color: white;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.19);
+  text-decoration: none;
+}
+
+/* selected link */
+#contact a:active {
+  color: blue;
+  text-decoration: none;
+}
+
+#btnPDF:link {
+  /* unvisited link */
+  color: green;
+  text-decoration: none;
+}
+
+/* visited link */
+#btnPDF:visited {
+  color: green;
+  text-decortation: none;
+}
+
+/* mouse over link */
+#btnPDF:hover {
+  color: white;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.19);
+  text-decoration: none;
+}
+
+/* selected link */
+#btnPDF:active {
+  color: blue;
+  text-decoration: none;
+}
+
+#btn:link {
+  /* unvisited link */
+  color: green;
+  text-decoration: none;
+}
+
+/* visited link */
+#btn:visited {
+  color: green;
+  text-decortation: none;
+}
+
+/* mouse over link */
+#btn:hover {
+  color: white;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.19);
+  text-decoration: none;
+}
+
+/* selected link */
+#btn:active {
+  color: blue;
+  text-decoration: none;
+}
+

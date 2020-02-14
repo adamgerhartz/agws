@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  margin-top: 0;
+  padding-top: 0;
+  font-family: "times new roman", Helvetica, sans-serif;
+  background: #333;
+}
+
+.topnav {
+  height: 2vw;
+  background: #333;	
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 5px 50px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a#link5 {
+  float: right;
+}
+
+.topnav a:hover {
+  background-color: #f2f2f2;
+  color: black;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.topnav a.active {
+  background-color: #1e99ff;
+  color: white;
+}
+
+.header {
+  overflow: hidden;
+  width: 100%;
+  background: white;
+  margin-top: 0;
+}
+
+.main {
+  padding: 1vw;
+  overflow: hidden;
+  height: 30vw;
+  background: white;
+}
+
+@media only screen and (max-width: 800px) {
+  .topnav a {
+    width: 100%;
+  }
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=button], input[type=reset] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=button]:hover, input[type=reset]:hover {
+  background-color: #45a049;
+}
+
+
+.container, .display {
+  background: white;
+  margin: 80px 100px 0;
+  border-radius: 5px;
+  border: 1px solid whitesmoke;
+  padding: 20px;
+  box-shadow: 2px 2px 4px 1px #aaaaaa;
+}
+
+.display {
+  margin-bottom: 80px;
+}
+
+input[type=button], input[type=reset] {
+  margin-top: 10px;
+}
+
+input[type=button] {
+  margin-right: 5px;
+}
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 900px) {
+  .col-25, .col-75, input[type=button], input[type=reset], .container, .display {
+    width: 100%;
+    margin: 0;
+  } 
+  input[type=button], input[type=reset] {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  #titleH1 {
+    text-align: right;
+  }
+  .navbar > a {
+    margin-right: 0px;
+    font-size: 1vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=button], input[type=reset], .container, .display {
+    width: 100%;
+    margin: 0;
+  }
+  input[type=button], input[type=reset] {
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  #titleH1 {
+    text-align: right;
+  }
+
+  navbar > a {
+    margin-right: 0px;
+  }
+}

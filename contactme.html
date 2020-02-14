@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Calculate the miles between two cities.">
+  <link rel="stylesheet" type="text/css" href="style_co.css">
+  <meta name="keywords" content="">
+  <meta name="author" content="">
+  <meta name="robots" content="index, follow">
+  <title>Adam's Website</title>
+</head>
+<body>
+  <!-- Header -->
+  <div class="topnav">
+    <a href="home.html">Home</a>
+	<a href="abtme.html">About Me</a>
+	<a href="resume.html">Résumé</a>
+	<a href="projects.html">Projects</a>
+	<a class="active" id="link5" href="contactme.html">Contact Me</a>
+  </div>
+  
+  
+  <div class="header">
+  </div>
+  
+ <div class="container">
+  <form name="myForm" action="assign13.php" method="post" onsubmit="return validateForm()">
+  <!-- Email -->
+  <h2>Send me an email</h2>
+
+  <!-- Information --> 
+  <div class="row">
+    <div class="col-25">
+      <label id="name" for="name">Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="name" name="name" 
+             class="formVal" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label id="email" for="email">Email</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="email" name="email" 
+             class="formVal" placeholder="Your email address..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label id="subject" for="subject">Subject</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="subject" name="subject" 
+             class="formVal" placeholder="Write your subject here..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label id="message" for="message">Message</label>
+    </div>
+    <div class="col-75">
+      <textarea type="text" rows="4" cols="50" id="message" name="message"
+             class="formVal" placeholder="Your message.."></textarea>
+    </div>
+  </div>
+
+  <!-- Submit -->
+  <div class="row">
+    <input type="reset" value="Clear" onclick="resetForm()" name="clear">
+    <input type="button" onclick="return validateForm();" value="Send" name="send">
+  </div>
+  </form>
+</div>
+
+
+<script src="script13.js"></script>
+  
+</body>
+</head>
+
